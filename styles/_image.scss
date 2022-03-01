@@ -1,0 +1,15 @@
+.image {
+    display: flex;
+    justify-content: center;
+    border: solid blue 3px;
+    min-height: 400px;
+
+    &__container {
+        display: flex;
+        align-self: flex-end;
+        max-width: 864px;
+        width: 100%;
+        min-height: 328px;
+        border: red solid 2px;
+    }
+}

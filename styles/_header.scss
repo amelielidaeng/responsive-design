@@ -1,6 +1,12 @@
 .header {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
+    max-width: 1440px;
+    width: 100%;
+    min-height: 150px;
+    align-items: center;
+    border: purple 2px solid;
 
     &__logo {
         font-style: normal;
@@ -17,6 +23,7 @@
     
         &__item {
             letter-spacing: 5px;
+            padding: 20px;
         }
     }
 }
@@ -25,4 +32,5 @@
 a {
     text-decoration: none;
     color: white;
+    padding: 1em;
 }
