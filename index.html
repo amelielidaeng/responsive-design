@@ -37,9 +37,9 @@
         </div>
         <section class="image">
             <div class="image__container">
-                <picture> <!--Unsure about the widths - they look good when minimizing window but are not equal to figma image-->
-                    <source media="(max-width: 600px)" srcset="/images/image-small.png">
-                    <source media="(max-width: 800px)" srcset="/images/image-medium.png">
+                <picture> <!--min-width could be useful too-->
+                    <source media="(max-width: 643px)" srcset="/images/image-small.png"> <!--617px img + 10 px padding-->
+                    <source media="(max-width: 890px)" srcset="/images/image-medium.png"> <!--864px img + 10px padding-->
                     <img class="image__main" src="/images/image-large.png" alt="Black and white photograph of Mt Fuji">
                 </picture>
                 </div>

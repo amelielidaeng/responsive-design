@@ -1,6 +1,11 @@
-$mobile: 600px;
-$tablet: 800px;
-$desktop: 1440px; 
+$mobile: 0px;
+$tablet: 320px;
+$desktop: 768px; 
+
+/*Unsure how to handle max-widths. I chose 600+800px as the pictures 
+still look good and doesn't become too big for the screen width, but it just 
+feels like I just made up a number. Is there a correct way to think when choosing
+max-width for responsive sites? */
 
 .info {
     border: solid red 2px;
@@ -22,17 +27,19 @@ $desktop: 1440px;
         font-family: 'Poppins', sans-serif;
         font-style: normal;
         font-weight: 500;
-        font-size: 84px;
-        line-height: 102px;
         letter-spacing: -2px;
         color: #FFFFFF;
-        @media screen and (max-width: $tablet) {
+        @media screen and (min-width: $mobile) {
+            font-size: 36px;
+            line-height: 40px;
+        }
+        @media screen and (min-width: $tablet) {
             font-size: 72px;
             line-height: 83px;
         }
-        @media screen and (max-width: $mobile) {
-            font-size: 36px;
-            line-height: 40px;
+        @media screen and (min-width: $desktop) {
+            font-size: 84px;
+            line-height: 102px;
         }
     }
 
