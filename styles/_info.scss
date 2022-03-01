@@ -8,7 +8,6 @@ feels like I just made up a number. Is there a correct way to think when choosin
 max-width for responsive sites? */
 
 .info {
-    border: solid red 2px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -20,7 +19,6 @@ max-width for responsive sites? */
         flex-wrap: wrap;
         flex-direction: column;
         align-items: center;
-        border: solid blue 2px;
     }
 
     &__headline {
