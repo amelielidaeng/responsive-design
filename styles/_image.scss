@@ -1,15 +1,16 @@
 .image {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     border: solid blue 3px;
-    min-height: 400px;
+    min-height: 400px; /*note to self: fix this*/
 
     &__container {
         display: flex;
+        flex-wrap: wrap;
         align-self: flex-end;
         max-width: 864px;
         width: 100%;
-        min-height: 328px;
         border: red solid 2px;
     }
 }

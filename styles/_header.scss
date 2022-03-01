@@ -4,9 +4,9 @@
     justify-content: space-around;
     max-width: 1440px;
     width: 100%;
-    min-height: 150px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     align-items: center;
-    border: purple 2px solid;
 
     &__logo {
         font-style: normal;
@@ -19,6 +19,7 @@
 
     &__list {
         display: flex;
+        flex-wrap: wrap;
         list-style: none;
     
         &__item {
