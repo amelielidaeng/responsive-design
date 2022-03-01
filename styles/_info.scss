@@ -1,3 +1,7 @@
+$mobile: 600px;
+$tablet: 800px;
+$desktop: 1440px; 
+
 .info {
     border: solid red 2px;
     display: flex;
@@ -6,8 +10,7 @@
 
     &__container { /*height issues here*/
         max-width: 574px;
-        width: 100%;
-        min-height: 198px; 
+        width: 100%; 
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
@@ -23,6 +26,14 @@
         line-height: 102px;
         letter-spacing: -2px;
         color: #FFFFFF;
+        @media screen and (max-width: $tablet) {
+            font-size: 72px;
+            line-height: 83px;
+        }
+        @media screen and (max-width: $mobile) {
+            font-size: 36px;
+            line-height: 40px;
+        }
     }
 
     &__text {
@@ -33,5 +44,14 @@
         line-height: 34px;
         text-align: center;
         color: #FFFFFF;
+        @media screen and (max-width: $tablet) {
+            font-size: 22px;
+            line-height: 33px;
+        }
+        @media screen and (max-width: $mobile) {
+            font-size: 12px;
+            line-height: 18px;
+        }
     }
 }
+

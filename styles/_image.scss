@@ -8,9 +8,11 @@
     &__container {
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
         align-self: flex-end;
         max-width: 864px;
         width: 100%;
+        margin: 10px;
         border: red solid 2px;
     }
 }

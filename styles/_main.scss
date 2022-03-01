@@ -1,7 +1,25 @@
+$mobile: 320px;
+$tablet: 768px;
+$desktop: 1440px; 
+
 main {
     max-width: 1440px;
     width: 100%;
     min-height: 810px; //height from figma image
     background-color: #000000;
     font-family: 'Baloo 2', italic;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    padding: 1em;
+}
+
+a:visited {
+    color: lightgray;
+}
+
+a:hover {
+    color: lightblue;
 }
